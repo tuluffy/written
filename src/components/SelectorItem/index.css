@@ -1,0 +1,16 @@
+.selectoritem-container{
+  height: 30px;
+  margin-left: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.selectoritem-icon{
+  width: 16px;
+  height: 16px;
+}
+
+.selectoritem-container div{
+  margin-left: 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fixed</title>
+</head>
+<body>
+<div class="top-div">
+    <div class="fixed-div">Do I look fixed to you?</div>
+</div>
+</body>
+<style>
+    .top-div {
+        width: 300px;
+        height: 300px;
+        background: coral;
+        transform: translate(100px, 100px);
+        animation: diagonal-loop 1s infinite alternate;
+    }
+    .fixed-div {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        top: 100px;
+        left: 100px;
+        padding: 10px;
+        color: white;
+    }
+    @keyframes diagonal-loop {
+        0% {
+            transform: translate(100px, 100px);
+        }
+        100% {
+            transform: translate(200px, 200px);
+        }
+    }
+</style>
+</html>
